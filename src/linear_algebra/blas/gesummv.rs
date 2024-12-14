@@ -24,6 +24,7 @@ unsafe fn init_array<const N: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_gesummv<const N: usize>(
     n: usize,
     alpha: DataType,

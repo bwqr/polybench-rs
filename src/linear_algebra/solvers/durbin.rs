@@ -9,6 +9,7 @@ unsafe fn init_array<const N: usize>(n: usize, r: &mut Array1D<DataType, N>) {
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_durbin<const N: usize>(
     n: usize,
     r: &Array1D<DataType, N>,

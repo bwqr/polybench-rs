@@ -24,6 +24,7 @@ unsafe fn init_array<const NX: usize, const NY: usize, const TMAX: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_fdtd_2d<const NX: usize, const NY: usize, const TMAX: usize>(
     tmax: usize,
     nx: usize,

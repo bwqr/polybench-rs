@@ -44,6 +44,7 @@ unsafe fn init_array<
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_3mm<
     const NI: usize,
     const NJ: usize,

@@ -17,6 +17,7 @@ unsafe fn init_array<const H: usize, const W: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_deriche<const H: usize, const W: usize>(
     w: usize,
     h: usize,

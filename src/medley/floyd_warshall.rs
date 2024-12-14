@@ -14,6 +14,7 @@ unsafe fn init_array<const N: usize>(n: usize, path: &mut Array2D<DataType, N, N
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_floyd_warshall<const N: usize>(n: usize, path: &mut Array2D<DataType, N, N>) {
     for k in 0..n {
         for i in 0..n {

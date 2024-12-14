@@ -30,6 +30,7 @@ unsafe fn init_array<const M: usize, const N: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_syr2k<const M: usize, const N: usize>(
     m: usize,
     n: usize,

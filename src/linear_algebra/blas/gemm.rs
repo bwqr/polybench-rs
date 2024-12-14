@@ -34,6 +34,7 @@ unsafe fn init_array<const NI: usize, const NJ: usize, const NK: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_gemm<const NI: usize, const NJ: usize, const NK: usize>(
     ni: usize,
     nj: usize,

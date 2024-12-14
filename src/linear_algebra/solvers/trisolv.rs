@@ -20,6 +20,7 @@ unsafe fn init_array<const N: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_trisolv<const N: usize>(
     n: usize,
     L: &Array2D<DataType, N, N>,

@@ -22,6 +22,7 @@ unsafe fn init_array<const M: usize, const N: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_atax<const M: usize, const N: usize>(
     m: usize,
     n: usize,

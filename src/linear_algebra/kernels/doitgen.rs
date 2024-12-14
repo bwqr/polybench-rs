@@ -26,6 +26,7 @@ unsafe fn init_array<const NP: usize, const NQ: usize, const NR: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_doitgen<const NP: usize, const NQ: usize, const NR: usize>(
     nr: usize,
     nq: usize,

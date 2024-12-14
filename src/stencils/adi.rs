@@ -16,6 +16,7 @@ unsafe fn init_array<const N: usize, const TSTEPS: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_adi<const N: usize, const TSTEPS: usize>(
     tsteps: usize,
     n: usize,

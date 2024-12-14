@@ -41,6 +41,7 @@ unsafe fn init_array<const NI: usize, const NJ: usize, const NK: usize, const NL
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_2mm<const NI: usize, const NJ: usize, const NK: usize, const NL: usize>(
     ni: usize,
     nj: usize,

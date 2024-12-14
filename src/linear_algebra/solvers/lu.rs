@@ -19,6 +19,7 @@ unsafe fn init_array<const N: usize>(n: usize, A: &mut Array2D<DataType, N, N>) 
     A.make_positive_semi_definite();
 }
 
+#[inline(never)]
 unsafe fn kernel_lu<const N: usize>(n: usize, A: &mut Array2D<DataType, N, N>) {
     for i in 0..n {
         for j in 0..i {

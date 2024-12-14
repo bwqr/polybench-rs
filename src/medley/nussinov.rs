@@ -21,6 +21,7 @@ unsafe fn init_array<const N: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_nussinov<const N: usize>(
     n: usize,
     seq: &Array1D<Base, N>,

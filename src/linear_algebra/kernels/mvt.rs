@@ -24,6 +24,7 @@ unsafe fn init_array<const N: usize>(
     }
 }
 
+#[inline(never)]
 unsafe fn kernel_mvt<const N: usize>(
     n: usize,
     x1: &mut Array1D<DataType, N>,

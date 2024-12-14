@@ -33,6 +33,7 @@ unsafe fn init_array<const N: usize>(
     A.make_positive_semi_definite();
 }
 
+#[inline(never)]
 unsafe fn kernel_ludcmp<const N: usize>(
     n: usize,
     A: &mut Array2D<DataType, N, N>,
