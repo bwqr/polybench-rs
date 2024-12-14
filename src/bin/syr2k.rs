@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::linear_algebra::blas::syr2k::bench;
 
 fn bench_and_print<const M: usize, const N: usize>() {

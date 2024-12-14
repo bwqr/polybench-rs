@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::medley::deriche::bench;
 
 fn bench_and_print<const H: usize, const W: usize>() {

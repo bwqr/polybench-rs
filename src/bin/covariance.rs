@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::datamining::covariance::bench;
 
 fn bench_and_print<const M: usize, const N: usize>() {

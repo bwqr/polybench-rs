@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::linear_algebra::kernels::doitgen::bench;
 
 fn bench_and_print<const NP: usize, const NQ: usize, const NR: usize>() {

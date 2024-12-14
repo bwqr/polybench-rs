@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::linear_algebra::blas::gemm::bench;
 
 fn bench_and_print<const NI: usize, const NJ: usize, const NK: usize>() {

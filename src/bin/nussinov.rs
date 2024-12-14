@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::medley::nussinov::bench;
 
 fn bench_and_print<const N: usize>() {

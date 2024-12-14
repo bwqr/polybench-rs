@@ -1,5 +1,3 @@
-#![feature(min_const_generics)]
-
 use polybench_rs::stencils::fdtd_2d::bench;
 
 fn bench_and_print<const NX: usize, const NY: usize, const TMAX: usize>() {
